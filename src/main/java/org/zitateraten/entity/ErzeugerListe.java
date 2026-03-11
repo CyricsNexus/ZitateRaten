@@ -13,7 +13,7 @@ public class ErzeugerListe {
 
     /**
      * Die Methode wird von der Subklasse {@link ListeZitat} aufgerufen
-     * @return ArrayList<Zitat> Mit Zitaten gefüllte Liste
+     * @return ArrayList Mit Zitaten gefüllte Liste
      */
     public static ArrayList<Zitat> erzeugeListe(){
         ArrayList<Zitat> zitatListe = new ArrayList<>();

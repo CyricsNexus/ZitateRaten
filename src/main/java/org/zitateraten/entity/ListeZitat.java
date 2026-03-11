@@ -1,6 +1,7 @@
 package org.zitateraten.entity;
 
 import org.zitateraten.Main;
+
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -99,7 +100,7 @@ public class ListeZitat extends ErzeugerListe{
 
     /**
      * Gibt nebeneinander Trennzeichen für bessere Optik aus
-     * @param anzahlTrennzeichen
+     * @param anzahlTrennzeichen Breite der Linie
      */
     public void ausgebenLinie(int anzahlTrennzeichen){
         for(int i = 0; i < anzahlTrennzeichen; i++){
@@ -111,6 +112,7 @@ public class ListeZitat extends ErzeugerListe{
     /**
      * Getter für die Liste mit den Zitaten an die Hauptmethode Main
      * @see Main#main()
+     * @return listeZitat Mit Zitaten gefüllte Liste
      */
     public ArrayList<Zitat> getListeZitat() {
         return listeZitat;
