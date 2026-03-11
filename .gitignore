@@ -3,7 +3,9 @@ build/
 !build/docs/
 !build/docs/javadoc/
 !gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
+!**/src/main/**/build/classes
+!**/src/main/**/build/generated
+!**/src/main/**/build/tmp
 !**/src/test/**/build/
 .kotlin
 
