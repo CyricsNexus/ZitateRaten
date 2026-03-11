@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"Alle Packages","u":"allpackages-index.html","k":"18"},{"m":"ZitateRaten.main","l":"org.zitateraten"},{"m":"ZitateRaten.main","l":"org.zitateraten.entity"}];updateSearchResults();
