@@ -16,7 +16,7 @@ public class Main {
      * Hauptmethode des Spiels Zitate raten
      * @throws InterruptedException für Thread.sleep() in {@link ListeZitat#spielen(int)}
      */
-    public static void main() throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException {
         ListeZitat neueListe = new ListeZitat();
 
         // Beginnt das Spiel

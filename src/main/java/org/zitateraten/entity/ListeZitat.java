@@ -111,7 +111,7 @@ public class ListeZitat extends ErzeugerListe{
 
     /**
      * Getter für die Liste mit den Zitaten an die Hauptmethode Main
-     * @see Main#main()
+     * @see Main
      * @return listeZitat Mit Zitaten gefüllte Liste
      */
     public ArrayList<Zitat> getListeZitat() {
