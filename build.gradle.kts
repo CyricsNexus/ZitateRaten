@@ -5,6 +5,28 @@ plugins {
 group = "org.example"
 version = "1.0-SNAPSHOT"
 
+tasks.jar {
+    manifest {
+        attributes(
+            "Main-Class" to "org.zitateraten.Main"
+        )
+    }
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+
+    from({
+        configurations.runtimeClasspath.get()
+            .filter { it.name.endsWith("jar") }
+            .map { zipTree(it) }
+    })
+}
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(17))
+    }
+}
+
+
 repositories {
     mavenCentral()
 }

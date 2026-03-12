@@ -62,10 +62,9 @@ public class ListeZitat extends ErzeugerListe{
          */
 
         while (counter >= 0){
-
             // Zitat ausgeben
             int indexListe = zufallszahl.nextInt(0,counter+1);
-            System.out.printf("Von wem stammt das Zitat:\n%s",
+            System.out.printf("Von wem stammt das Zitat:\n\"%s\"",
             listeZitat.get(indexListe).getSpruch());
 
             // Pause, um Zitat lesen zu können
@@ -86,14 +85,14 @@ public class ListeZitat extends ErzeugerListe{
             listeZitat.remove(listeZitat.get(indexListe));
             if(--counter >= 0) {
                 Thread.sleep(3000);     // 3 Sek vor neuem Zitat
-            } else {
-                Thread.sleep(1000);     // 1 Sekunde vor Spielende
+                clearKonsole();
             }
         }
 
         // Spielende
         System.out.println("Spiel beendet.");
         ausgebenLinie(100);
+        Thread.sleep(3000);     // 1 Sekunde vor Spielende
         zufallszahl = null;
 
     }
@@ -110,8 +109,17 @@ public class ListeZitat extends ErzeugerListe{
     }
 
     /**
+     * Macht Leerzeilen für "Leere Konsole"
+     */
+    public void clearKonsole(){
+        for(int i = 0; i < 150; i++){
+            System.out.println();
+        }
+    }
+
+    /**
      * Getter für die Liste mit den Zitaten an die Hauptmethode Main
-     * @see Main#main()
+     * @see Main
      * @return listeZitat Mit Zitaten gefüllte Liste
      */
     public ArrayList<Zitat> getListeZitat() {

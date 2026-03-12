@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"Alle Klassen und Schnittstellen","u":"allclasses-index.html","k":"18"},{"p":"org.zitateraten.entity","l":"ErzeugerListe"},{"p":"org.zitateraten.entity","l":"ListeZitat"},{"p":"org.zitateraten","l":"Main"},{"p":"org.zitateraten.entity","l":"Zitat"}];updateSearchResults();
