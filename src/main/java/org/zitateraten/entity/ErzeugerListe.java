@@ -21,7 +21,7 @@ public class ErzeugerListe {
         // Hier neue Zitate hinzufügen: Spruch : String, Urheber : String
         zitatListe.add(new Zitat("Mailand oder Madrid, Hauptsache Italien", "Andreas Möller"));
         zitatListe.add(new Zitat("How much is the fish?", "H.P Baxxter"));
-
+        zitatListe.add(new Zitat("Gott ist tot!", "Nietzsche"));
 
         return zitatListe;
     }
