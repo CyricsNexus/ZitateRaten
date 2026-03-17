@@ -23,6 +23,7 @@ public class ErzeugerListe {
         zitatListe.add(new Zitat("How much is the fish?", "H.P Baxxter"));
         zitatListe.add(new Zitat("Gott ist tot!", "Nietzsche"));
         zitatListe.add(new Zitat("Der Weg ist das Ziel.", "Konfuzius"));
+        zitatListe.add(new Zitat("Der Mensch ist des Menschen Wolf", "Thomas Hobbes"));
         return zitatListe;
     }
 }
